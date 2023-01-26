@@ -1,0 +1,30 @@
+{
+  "name": "dev-container",
+  "dockerComposeFile": ["../docker-compose.yml"],
+  "service": "dev",
+  "shutdownAction": "none",
+  "workspaceFolder": "/workspace/Example",
+  "extensions": [
+    "esbenp.prettier-vscode",
+    "eamodio.gitlens",
+    "mhutchie.git-graph",
+    "streetsidesoftware.code-spell-checker",
+    "humao.rest-client",
+    "dbaeumer.vscode-eslint",
+    "vscode-icons-team.vscode-icons"
+  ],
+  "settings": {
+    "terminal.integrated.defaultProfile.linux": "bash",
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": true
+    },
+    "typescript.format.enable": false,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true,
+    "editor.formatOnType": true,
+    "editor.formatOnPaste": true,
+    "[typescript]": {
+      "editor.formatOnSave": true
+    }
+  }
+}

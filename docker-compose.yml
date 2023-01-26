@@ -1,0 +1,17 @@
+version: '3'
+services:
+  dev:
+    build:
+      context: .
+      dockerfile: ./.devcontainer/Dockerfile
+    tty: true
+    environment:
+      TZ: Asia/Tokyo
+    volumes:
+      - vscode-extensions:/root/.vscode-server/extensions
+      - ./Example:/workspace/Example
+    working_dir: /workspace/Example
+    ports:
+      - '8080:8080'
+volumes:
+  vscode-extensions:
