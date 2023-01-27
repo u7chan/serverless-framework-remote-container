@@ -3,7 +3,7 @@
   "dockerComposeFile": ["../docker-compose.yml"],
   "service": "dev",
   "shutdownAction": "none",
-  "workspaceFolder": "/workspace/Example",
+  "workspaceFolder": "/workspace",
   "extensions": [
     "esbenp.prettier-vscode",
     "eamodio.gitlens",

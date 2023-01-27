@@ -13,10 +13,10 @@ services:
       TZ: Asia/Tokyo
     volumes:
       - vscode-extensions:/root/.vscode-server/extensions
-      - workspace:/workspace/Example
-    working_dir: /workspace/Example
+      - workspace:/workspace
+    working_dir: /workspace
     ports:
-      - '8080:8080'
+      - '3000:3000'
 volumes:
   vscode-extensions:
   workspace:
