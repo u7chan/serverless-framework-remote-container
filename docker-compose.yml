@@ -5,7 +5,11 @@ services:
       context: .
       dockerfile: ./.devcontainer/Dockerfile
     tty: true
+    env_file:
+      - .env
     environment:
+      AWS_DEFAULT_REGION: ap-northeast-1
+      AWS_DEFAULT_OUTPUT: json
       TZ: Asia/Tokyo
     volumes:
       - vscode-extensions:/root/.vscode-server/extensions
